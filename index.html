@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Card</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div class="birthdayCard" id="birthdayCard">
+        <div class="cardFront">
+            <div class="front-text">
+                <h3 class="happy">HAPPY</h3>
+                <h2 class="bday">BIRTHDAY</h2>
+                <h3 class="toyou">Rana!</h3>
+            </div>
+            <div class="wrap-deco">
+                <div class="decorations"></div>
+                <div class="decorationsTwo"></div>
+            </div>
+            <div class="wrap-decoTwo">
+                <div class="decorations"></div>
+                <div class="decorationsThree"></div>
+            </div>
+            <div class="plate">
+                <div class="cake"></div>
+                <div class="flame"></div>
+            </div>
+        </div>
+        <div class="cardInside">
+            <div class="inside-text">
+                <h3 class="happy">HAPPY</h3>
+                <h2 class="bday">BIRTHDAY</h2>
+                <h3 class="toyou">to you!</h3>
+            </div>
+            <div class="wishes">
+                <p>ph. Rana</p>
+                <p>Happy birthday!! I hope your day is filled with joy and laughter!</p>
+                <p class="name">@A</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <script>
+        const jsConfetti = new JSConfetti();
+        jsConfetti.addConfetti();
+
+        setTimeout(() => {
+            const card = document.getElementById('birthdayCard');
+            card.classList.add('open');
+        }, 3000);
+    </script>
+</body>
+</html>
